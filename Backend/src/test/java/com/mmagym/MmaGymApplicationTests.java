@@ -1,13 +1,13 @@
-package com.fit.schedule.fit_schedule;
+package com.mmagym;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FitScheduleApplicationTests {
+class MmaGymApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
