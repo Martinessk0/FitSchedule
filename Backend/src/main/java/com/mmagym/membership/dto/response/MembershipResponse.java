@@ -1,6 +1,6 @@
 package com.mmagym.membership.dto.response;
 
-import com.mmagym.model.enums.MembershipType;
+import com.mmagym.common.enums.MembershipType;
 import lombok.*;
 
 import java.time.LocalDate;

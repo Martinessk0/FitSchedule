@@ -1,6 +1,6 @@
 package com.mmagym.booking.dto.response;
 
-import com.mmagym.model.enums.BookingStatus;
+import com.mmagym.common.enums.BookingStatus;
 import lombok.*;
 
 import java.time.LocalDateTime;

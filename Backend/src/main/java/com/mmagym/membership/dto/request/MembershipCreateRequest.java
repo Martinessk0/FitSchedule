@@ -1,6 +1,6 @@
 package com.mmagym.membership.dto.request;
 
-import com.mmagym.model.enums.MembershipType;
+import com.mmagym.common.enums.MembershipType;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 

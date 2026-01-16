@@ -1,7 +1,7 @@
 package com.mmagym.seeder;
 
 
-import com.mmagym.model.enums.SessionType;
+import com.mmagym.common.enums.SessionType;
 import com.mmagym.room.Room;
 import com.mmagym.room.repository.RoomRepository;
 import com.mmagym.training_session.TrainingSession;

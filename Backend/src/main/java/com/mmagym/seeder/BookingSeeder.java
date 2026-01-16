@@ -2,7 +2,7 @@ package com.mmagym.seeder;
 
 import com.mmagym.booking.Booking;
 import com.mmagym.booking.repository.BookingRepository;
-import com.mmagym.model.enums.BookingStatus;
+import com.mmagym.common.enums.BookingStatus;
 import com.mmagym.training_session.TrainingSession;
 import com.mmagym.training_session.repository.TrainingSessionRepository;
 import com.mmagym.user.User;
