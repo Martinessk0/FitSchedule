@@ -1,5 +1,6 @@
 package com.mmagym.membership;
 
+import com.mmagym.model.enums.MembershipType;
 import com.mmagym.user.User;
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,8 +29,11 @@ public class Membership {
     @Column(name = "end_date", nullable = false)
     private LocalDate endDate;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "type", nullable = false)
+    private MembershipType type;
+
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @OnDelete(action = OnDeleteAction.SET_NULL)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 }

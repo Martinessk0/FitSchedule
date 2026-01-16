@@ -33,7 +33,6 @@ public class Booking {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @OnDelete(action = OnDeleteAction.SET_NULL)
     @JoinColumn(name = "training_session_id", nullable = false)
     private TrainingSession trainingSession;
 

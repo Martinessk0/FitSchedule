@@ -36,7 +36,6 @@ public class TrainingSession {
     private SessionType type;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false) //zarejda pulni staq obekti samo pri nujda
-    @OnDelete(action = OnDeleteAction.SET_NULL) //kato se iztrie staq slaga fk na null
     @JoinColumn(name = "room_id", nullable = false)
     private Room room;
 }
