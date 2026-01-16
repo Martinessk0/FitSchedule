@@ -1,5 +1,6 @@
 package com.mmagym.training_session.dto.request;
 
+import com.mmagym.model.enums.SessionType;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -23,6 +24,9 @@ public class TrainingSessionCreateRequest {
 
     @NotNull
     private Long roomId; //controlera ne vzima entity
+
+    @NotNull
+    private SessionType type;
 
     // validaciqta e tuk, ne v entitito
 
