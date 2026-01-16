@@ -1,6 +1,6 @@
 package com.mmagym.membership;
 
-import com.mmagym.model.enums.MembershipType;
+import com.mmagym.common.enums.MembershipType;
 import com.mmagym.user.User;
 import jakarta.persistence.*;
 import lombok.*;

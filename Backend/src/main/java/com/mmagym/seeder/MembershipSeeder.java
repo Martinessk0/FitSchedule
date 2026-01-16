@@ -1,9 +1,9 @@
 package com.mmagym.seeder;
 
 
+import com.mmagym.common.enums.MembershipType;
 import com.mmagym.membership.Membership;
 import com.mmagym.membership.repository.MembershipRepository;
-import com.mmagym.model.enums.MembershipType;
 import com.mmagym.user.User;
 import com.mmagym.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;

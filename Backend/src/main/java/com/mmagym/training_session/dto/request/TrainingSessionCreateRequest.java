@@ -1,6 +1,6 @@
 package com.mmagym.training_session.dto.request;
 
-import com.mmagym.model.enums.SessionType;
+import com.mmagym.common.enums.SessionType;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
