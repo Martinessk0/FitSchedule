@@ -1,4 +1,4 @@
-package com.mmagym.model.entity;
+package com.mmagym.user;
 
 import jakarta.persistence.*;
 import lombok.*;

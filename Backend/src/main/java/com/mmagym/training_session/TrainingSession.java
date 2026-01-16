@@ -1,6 +1,7 @@
-package com.mmagym.model.entity;
+package com.mmagym.training_session;
 
 import com.mmagym.model.enums.SessionType;
+import com.mmagym.room.Room;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.OnDelete;

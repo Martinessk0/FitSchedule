@@ -1,5 +1,6 @@
-package com.mmagym.model.entity;
+package com.mmagym.membership;
 
+import com.mmagym.user.User;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.OnDelete;

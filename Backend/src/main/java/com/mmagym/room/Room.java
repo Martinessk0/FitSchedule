@@ -1,11 +1,8 @@
-package com.mmagym.model.entity;
+package com.mmagym.room;
 
 
-import com.mmagym.model.enums.SessionType;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Table(name = "rooms")
