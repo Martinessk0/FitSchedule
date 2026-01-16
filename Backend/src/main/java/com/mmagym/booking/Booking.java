@@ -9,6 +9,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "bookings",
@@ -41,11 +42,11 @@ public class Booking {
     private BookingStatus status;
 
     @Column(name = "created_at", nullable = false)
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 
     @PrePersist
     void prePersist() {
-        this.createdAt = LocalDate.now();
+        this.createdAt = LocalDateTime.now();
         if (this.status == null) {
             this.status = BookingStatus.BOOKED;
         }
