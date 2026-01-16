@@ -1,6 +1,6 @@
 package com.mmagym.training_session.dto.response;
 
-import com.mmagym.model.enums.SessionType;
+import com.mmagym.common.enums.SessionType;
 import lombok.*;
 
 import java.time.LocalDateTime;

@@ -1,7 +1,7 @@
 package com.mmagym.booking.repository;
 
 import com.mmagym.booking.Booking;
-import com.mmagym.model.enums.BookingStatus;
+import com.mmagym.common.enums.BookingStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookingRepository extends JpaRepository<Booking, Long> {

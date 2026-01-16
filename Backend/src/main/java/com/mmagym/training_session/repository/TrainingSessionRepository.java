@@ -1,6 +1,6 @@
 package com.mmagym.training_session.repository;
 
-import com.mmagym.model.enums.SessionType;
+import com.mmagym.common.enums.SessionType;
 import com.mmagym.training_session.TrainingSession;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

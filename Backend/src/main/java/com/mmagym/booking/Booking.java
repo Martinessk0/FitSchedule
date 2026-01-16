@@ -1,6 +1,6 @@
 package com.mmagym.booking;
 
-import com.mmagym.model.enums.BookingStatus;
+import com.mmagym.common.enums.BookingStatus;
 import com.mmagym.training_session.TrainingSession;
 import com.mmagym.user.User;
 import jakarta.persistence.*;
