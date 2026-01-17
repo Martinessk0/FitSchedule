@@ -1,12 +1,25 @@
 package com.mmagym.membership.mapper;
 
 import com.mmagym.membership.Membership;
+import com.mmagym.membership.dto.request.MembershipCreateRequest;
 import com.mmagym.membership.dto.response.MembershipResponse;
+import com.mmagym.user.User;
 
 import java.time.LocalDate;
 
 public final class MembershipMapper {
     private MembershipMapper() {}
+
+    public static Membership toEntity(MembershipCreateRequest request, User user) {
+        if (request == null) return null;
+
+        return Membership.builder()
+                .user(user)
+                .type(request.getType())
+                .startDate(request.getStartDate())
+                .endDate(request.getEndDate())
+                .build();
+    }
 
     public static MembershipResponse toResponse(Membership membership) {
         if(membership == null) return null;
