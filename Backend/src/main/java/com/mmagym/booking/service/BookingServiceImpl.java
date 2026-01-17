@@ -56,10 +56,10 @@ public class BookingServiceImpl implements BookingService {
 
         if (!active) throw new ConflictException("User has no active membership.");
 
-        if(bookingRepository.existsByUserIdAndTrainingSessionId(user.getId(), trainingSession.getId()))
+        if(bookingRepository.existsByUser_IdAndTrainingSession_Id(user.getId(), trainingSession.getId()))
             throw new ConflictException("User has already booked this session");
 
-        long bookedCount = bookingRepository.countByTrainingSessionIdAndStatus(trainingSession.getId(), BookingStatus.BOOKED);
+        long bookedCount = bookingRepository.countByTrainingSession_IdAndStatus(trainingSession.getId(), BookingStatus.BOOKED);
         if (bookedCount >= trainingSession.getCapacity()) {
             throw new ConflictException("Session is full");
         }

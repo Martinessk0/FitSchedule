@@ -50,7 +50,7 @@ public class BookingSeeder implements Seeder {
                 int current = used.getOrDefault(s.getId(), 0);
 
                 if (current >= s.getCapacity()) continue;
-                if (bookingRepository.existsByUserIdAndTrainingSessionId(u.getId(), s.getId())) continue;
+                if (bookingRepository.existsByUser_IdAndTrainingSession_Id(u.getId(), s.getId())) continue;
 
                 bookings.add(Booking.builder()
                         .user(u)
