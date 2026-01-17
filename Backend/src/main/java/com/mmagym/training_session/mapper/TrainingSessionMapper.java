@@ -1,10 +1,24 @@
 package com.mmagym.training_session.mapper;
 
+import com.mmagym.room.Room;
 import com.mmagym.training_session.TrainingSession;
+import com.mmagym.training_session.dto.request.TrainingSessionCreateRequest;
 import com.mmagym.training_session.dto.response.TrainingSessionResponse;
 
 public final class TrainingSessionMapper {
     private TrainingSessionMapper() {}
+
+    public static TrainingSession toEntity(TrainingSessionCreateRequest request, Room room) {
+        if (request == null) return null;
+
+        return TrainingSession.builder()
+                .startTime(request.getStartTime())
+                .endTime(request.getEndTime())
+                .capacity(request.getCapacity())
+                .type(request.getType())
+                .room(room)
+                .build();
+    }
 
     public static TrainingSessionResponse toResponse(TrainingSession session) {
         if (session == null) return null;
